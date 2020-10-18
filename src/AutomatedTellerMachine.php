@@ -44,7 +44,7 @@ class AutomatedTellerMachine implements Transactions
         }
 
         if ($value > $account->getBalance()) {
-            throw new Exception('vocẽ tem saldo suficiente para sacar esse valor');
+            throw new Exception('vocẽ não tem saldo suficiente para sacar esse valor');
         }
 
         $notes = [200, 100, 50, 20, 10, 5, 2];

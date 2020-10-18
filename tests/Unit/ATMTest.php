@@ -18,4 +18,4 @@ test('Test if cant debit value more than balance account', function () {
 
     $atm = new AutomatedTellerMachine($bradescoBank);
     $atm->withDraw(2222, 100);
-})->throws(Exception::class, 'vocẽ tem saldo suficiente para sacar esse valor');
+})->throws(Exception::class, 'vocẽ não tem saldo suficiente para sacar esse valor');
